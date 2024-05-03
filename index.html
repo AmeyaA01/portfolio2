@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/me.jpg?alt=media&token=0af2faae-85b2-4a2c-bf85-fd5990669652');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Certificate</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Ameya Amanagi</b></h1>
+    <p>Web Developer</p>
+    <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/me.jpg?alt=media&token=0af2faae-85b2-4a2c-bf85-fd5990669652" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/me.jpg?alt=media&token=0af2faae-85b2-4a2c-bf85-fd5990669652" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.open('https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/resume2.jpg?alt=media&token=860fadf8-1d60-495f-b9dc-36198dd399f9')">
+  <i class="fa fa-download"></i> Download Resume
+</button>
+  </header>
+
+   
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Certificate</h2>
+    <hr class="w3-opacity">
+
+ <!-- Grid for photos -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-full">
+      <h3>Microsoft Azure : AI Fundamentals</h3>
+     <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/microsoft.jpg?alt=media&token=eecbaf0e-3920-4617-b34b-9a05e96c62d3" style="width:80%">
+     <h3>Abhudaya IIT bombay : Cyber Security</h3>
+      <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/iitb.jpg?alt=media&token=37b35258-63ec-444b-9b7e-da9ed3208fe0" style="width:80%">
+      <h3>Udemy : Full stack web development</h3>
+<img src="https://firebasestorage.googleapis.com/v0/b/portfolio-39b1c.appspot.com/o/udemy.jpg?alt=media&token=d0dd2f17-7f0a-43a8-bef9-411e17a3f8df" style="width:80%">
+      <!-- Add more certificate images here -->
+    </div>
+
+    <!-- About Section -->
+   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About Me</h2>
+    <hr class="w3-opacity">
+    <p>I'm Ameya Amanagi 
+      I'm a 2nd year CSE student studying at SGU.I have adopted some of the coding skills along with different Operating Systems.I'm looking forward to adopt more programming languages & development tools to develope websites!
+      I am passionate to learn more exciting skills!
+      I am fascinated by the ever evolving world of technology and how it impact our lives.
+      I am excited to be a part of shaping its future.I have been passionate about learning new things.My most extensive interests include programming,no matter what i am doing at school or working on in my free time,you will always find me surrounded by computers.
+      Here you can explore my work and learn more about my skills and expierience in computer science
+    </p>
+  </div>
+
+ <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+ 
+  <div>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <a href="https://github.com/AmeyaA01/C"><p class="w3-wide"><i class="fa fa-github fa-x"></i>C Language</p></a>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
+    </div>
+    <a href="https://github.com/AmeyaA01/portfolio"><p class="w3-wide"><i class="fa fa-github fa-x"></i>Web Design</p></a>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:55%">35%</div>
+    </div>
+    <p class="w3-wide">Java</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+    </div><br>
+    <a href="https://github.com/AmeyaA01/Cpp"><p class="w3-wide"><i class="fa fa-github fa-x"></i>C++ Language</p></a>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:55%">45%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4+</span><br>
+        Skills
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4+</span><br>
+        Certificate
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2+</span><br>
+        Courses Done
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">My TimeLine</h3>
+  
+    <p><span class="w3-large w3-text-black w3-margin-right">Shankar Chakru Patil Madhyamik Vidyalay, Dindewadi</span> Secondary Education</p>
+    <p>Year:2019-2020 Percentage-94%</p><br>
+   
+    
+    <p><span class="w3-large w3-text-black w3-margin-right">Karmaveer Hire College, Kolhapur</span> Higher Secondary Education</p>
+    <p>Year:2020-2022 Percentage-70%</p><br>
+    
+    
+    <p><span class="w3-large w3-text-black w3-margin-right">Sanjay Ghodawat University</span> CSE</p>
+    <p>Year:2022-2026</p><br>
+    
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Dindewadi, Kolhapur, Maharashtra</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 7038443219</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ameyaamanagi1809@gmail.com</p>
+    </div>
+  
+    <p>Lets get in touch. Send me a message:</p>
+     <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="c8bdc0ed-3966-4b29-9cff-8a9fcb329fb3">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+ <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+<center>
+    <a href="https://www.facebook.com/profile.php?id=61557662325025" class="w3-hover-opacity" target="_blank"><i class="fa fa-facebook-official"></i></a> &nbsp;
+	<a href="https://www.instagram.com/ameyaamanagi/" class="w3-hover-opacity" target="_blank"><i class="fa fa-instagram"></i></a> &nbsp; 
+    <a href="https://github.com/AmeyaA01" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a> &nbsp;
+    <a href="https://twitter.com/AmanagiAmeya" class="w3-hover-opacity" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a> &nbsp;
+     <a href="https://www.linkedin.com/in/ameya-amanagi-4813812b1/" class="w3-hover-opacity" target="_blank"> <i class="fa fa-linkedin w3-hover-opacity"></i></a> &nbsp;
+</center>
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
